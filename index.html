@@ -278,10 +278,7 @@
             <div class="max-w-xl mx-auto bg-gray-900 p-8 rounded-xl shadow-2xl border border-gray-800">
                 <div id="reservation-message" class="text-center text-white mb-4 hidden font-medium"></div>
                 
-                <!-- 
-                    FORM ACTION CONFIGURATION: The form is pointed to the Formspree URL.
-                -->
-                <form id="reservation-form" action="https://formspree.io/f/xwpwajpo" method="POST" target="_blank"> 
+                <form id="reservation-form" action="https://formspree.io/f/xjkjblva" method="POST" target="_blank"> 
                     
                     <!-- Name -->
                     <div class="mb-4">
@@ -373,7 +370,8 @@
 
     <!-- BOTTOM NAVIGATION BAR (FIXED and Mobile-First) -->
     <footer class="fixed bottom-0 left-0 w-full bg-black/90 backdrop-blur-sm z-50 shadow-t-xl border-t border-gray-800">
-        <div class="h-18 grid grid-cols-3 max-w-xl mx-auto">
+        <!-- **UPDATED** to grid-cols-5 for the new DoorDash button -->
+        <div class="h-18 grid grid-cols-5 max-w-2xl mx-auto">
             
             <!-- Button 1: Call -->
             <a href="tel:+12269796072" class="flex flex-col items-center justify-center p-2 text-white hover:bg-gray-800 transition duration-150">
@@ -381,13 +379,25 @@
                 <span class="text-xs mt-1">Call</span>
             </a>
 
-            <!-- Button 2: Menu (ENLACE ACTUALIZADO) -->
+            <!-- Button 2: Menu -->
             <a href="https://jimenhersolutions.github.io/menufamilybar-restaurant/" target="_blank" class="flex flex-col items-center justify-center p-2 text-white hover:bg-gray-800 transition duration-150">
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
                 <span class="text-xs mt-1">Menu</span>
             </a>
+            
+            <!-- Button 3: UBER EATS (Using Utensils icon) -->
+            <a href="https://www.ubereats.com/ca/store/family-bar-and-restaurant/tO8E-038XZ2Hz1B7qz6czg?diningMode=DELIVERY&sc=SEARCH_SUGGESTION" target="_blank" class="flex flex-col items-center justify-center p-2 text-white hover:bg-gray-800 transition duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M3 2v7c0 1.1 0.9 2 2 2h4c1.1 0 2-0.9 2-2V2H3z"/><path d="M11 2v9h10V2H11z"/><path d="M3 12h8v10H3V12z"/><path d="M11 14h10v6H11V14z"/></svg>
+                <span class="text-xs mt-1">Uber Eats</span>
+            </a>
 
-            <!-- Button 3: Reserve -->
+            <!-- **NEW BUTTON:** DOOR DASH (Using Shopping Bag icon) -->
+             <a href="https://www.doordash.com/store/31003033?utm_source=mx_share" target="_blank" class="flex flex-col items-center justify-center p-2 text-white hover:bg-gray-800 transition duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="text-xs mt-1">DoorDash</span>
+            </a>
+
+            <!-- Button 5: Reserve -->
             <a href="#reservaciones" class="flex flex-col items-center justify-center p-2 text-white hover:bg-gray-800 transition duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M17 14h-6"/><path d="M13 18h-2"/></svg>
                 <span class="text-xs mt-1">Reserve</span>
